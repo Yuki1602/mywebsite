@@ -42,7 +42,7 @@
       <updated>1592036780050</updated>
       <workItem from="1592036799881" duration="597000" />
       <workItem from="1592058454684" duration="3845000" />
-      <workItem from="1592063498594" duration="569000" />
+      <workItem from="1592063498594" duration="2185000" />
     </task>
     <servers />
   </component>
@@ -54,5 +54,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1592037443397" />
+    <state x="491" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592065163312">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="491" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1592065163312" />
   </component>
 </project>

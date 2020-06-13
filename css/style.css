@@ -46,7 +46,7 @@ p {
 }
 h2 {
 	font-size:15px;
-	color:#353535!important;
+	color:#A6A6A6!important;
 	text-transform:uppercase;
 	font-weight:bold;
 }
@@ -457,7 +457,7 @@ table {
 	background-size: contain;
 	padding:110px 0 100px 0;
 	height:auto;
-	background-color: #FBFBFB;
+	background-color: #949494;
 }
 .hero h1 {
 	font-size: 120px;
@@ -468,15 +468,15 @@ table {
 	text-transform: uppercase;
 }
 .hero h1 span {
-	color:#a1a9b0;
-	/* display:inline-block; */
+	color: #000000;
+	/* display:inline-blo	ck; */
 }
 .hero h3 {
 	font-size: 20px;
 	margin:0;
 	padding:0;
 	opacity:0.5;
-	color: #E04343;
+	color: #e00002;
 	letter-spacing: 18px;
 	line-height: 50px;
 	text-transform: uppercase;
@@ -561,7 +561,7 @@ table {
 h1.arrow {
 	font-size: 16px;
 	text-transform:uppercase;
-	color:#353535;
+	color:#A6A6A6;
 	letter-spacing: 4px;
 	background:url('../img/h1-bg.png') no-repeat center bottom;
 	padding-bottom:30px;
