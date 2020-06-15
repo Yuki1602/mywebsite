@@ -1,64 +1,53 @@
-/** Code By Webdevtrick ( https://webdevtrick.com ) **/
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-    font-family: 'Electrolize', sans-serif;
-}
-body {
-    color: #212121;
-    -webkit-font-smoothing: antialiased;
-    padding: 2%;
-    line-height: 1;
-}
-h1 {
-    font-weight: bold;
-    text-align: center;
-    font-size: 1.5em;
-    padding: .5em 0;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #212121;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-.wrap {
-    width: 50%;
-    margin: 0 auto;
-}
-.bar {
-    background: #ff413d;
-    width: 0;
-    margin: .25em 0;
-    color: #fff;
+.bar{
+    height: 30px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 10px;
     position: relative;
-    transition: width 2s, background .2s;
-    -webkit-transform: translate3d(0, 0, 0);
-    clear: both;
 }
-.bar:nth-of-type(odd) {
-    background: #ff6461;
-}
-.bar .label {
-    font-size: .75em;
-    padding: 1em;
-    background: #212121;
-    width: 7em;
-    display: inline-block;
-    position: relative;
-    z-index: 2;
-    font-weight: bold;
-}
-.bar .label.second {
-    background: #333;
-}
-.count {
+.bar::before{
+    content: '';
+    width: 100%;
     position: absolute;
-    right: .25em;
-    top: .75em;
-    padding: .15em;
-    font-size: .75em;
-    font-weight: bold;
+    left: 0;
+    height: 30px;
+    top: 0;
+    z-index: -2;
+    background: #ecf0f1;
+}
+.bar::after{
+    content: '';
+    background: #2ecc71;
+    height: 30px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    -webkit-animation: bar-before 1 1.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bar1::after{
+    max-width: 60%;
+}
+.bar2::after{
+    max-width: 72%;
+}
+.bar3::after{
+    max-width: 47%;
+}
+.bar4::after{
+    max-width: 20%;
+}
+@-webkit-keyframes bar-before{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
 }
