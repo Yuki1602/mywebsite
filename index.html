@@ -28,7 +28,14 @@
     <!--[if lt IE 9]>
     <script src="assets/html5shiv/html5shiv.js"></script>
     <script src="assets/respond/respond.min.js"></script>
+
     <![endif]-->
+      <link href='https://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+
+      <!-- amCharts javascript sources -->
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+      <script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/chalk.js"></script>
   </head>
     <body id="top">
 
@@ -164,13 +171,14 @@
 		<div class="container-fluid">
 		    <!-- About 1 -->
 			<div class="row color-bg">
-				<div class="col-md-8 nopadding features-intro-img">
-					<div class="about-image" style="background-image:url(img/about1.png)"></div><!-- about image 1 -->
-				</div>
-				<div class="col-md-4 about-text">
-					<h6>My Skills</h6><!-- headline-->
+                <div class="col-md-4 about-text">
+                    <h6>My Skills</h6><!-- headline-->
 
+                </div>
+				<div class="col-md-8 nopadding features-intro-img">
+                    <div id="chartdiv" class="about-image" style=" width: 100%; height: 410px; background-color: #282828;" ></div>
 				</div>
+
 			</div>
 
 		</div>
@@ -405,8 +413,72 @@
         </footer>
 		<!-- ==========================
         FOOTER SECTION END
-        =========================== -->		
-		
+        =========================== -->
+      <script type="text/javascript">
+          AmCharts.makeChart("chartdiv",
+              {
+                  "type": "serial",
+                  "categoryField": "category",
+                  "columnWidth": 0.69,
+                  "rotate": true,
+                  "startDuration": 1,
+                  "theme": "chalk",
+                  "categoryAxis": {
+                      "gridPosition": "start"
+                  },
+                  "trendLines": [],
+                  "graphs": [
+                      {
+                          "fillAlphas": 1,
+                          "id": "AmGraph-1",
+                          "title": "graph 1",
+                          "type": "column",
+                          "valueField": "graph 1"
+                      }
+                  ],
+                  "guides": [],
+                  "valueAxes": [
+                      {
+                          "id": "ValueAxis-1",
+                          "stackType": "regular"
+                      }
+                  ],
+                  "allLabels": [],
+                  "balloon": {},
+                  "titles": [],
+                  "dataProvider": [
+                      {
+                          "category": "PHP",
+                          "graph 1": "95"
+                      },
+                      {
+                          "category": "HTML 5",
+                          "graph 1": "90"
+                      },
+                      {
+                          "category": "CSS 3",
+                          "graph 1": "80"
+                      },
+                      {
+                          "category": "mySQL",
+                          "graph 1": "75"
+                      },
+                      {
+                          "category": "python",
+                          "graph 1": "68"
+                      },
+                      {
+                          "category": "Android (Java)",
+                          "graph 1": "60"
+                      },
+                      {
+                          "category": "Javascript",
+                          "graph 1": "65"
+                      }
+                  ]
+              }
+          );
+      </script>
 		
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
